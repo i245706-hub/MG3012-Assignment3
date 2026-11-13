@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager dApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager dApp</h1>
+
+    <button id="connectBtn">Connect MetaMask</button>
+    <p><strong>Account:</strong> <span id="account">Not connected</span></p>
+    <p><strong>Contract:</strong> <span id="contractAddr">-</span></p>
+
+    <hr />
+    <h3>Add Task</h3>
+    <input type="text" id="taskInput" placeholder="Enter task description" />
+    <button id="addBtn">Add Task</button>
+
+    <hr />
+    <h3>Tasks (<span id="count">0</span>)</h3>
+    <ul id="taskList"></ul>
+    <button id="refreshBtn">Refresh</button>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
